@@ -1,0 +1,67 @@
+/* Главный экран */
+
+/* Заголовок навигации на главном экране */
+"home.navigation.title" = "Guten Morgen";
+/* Текст кнопки «Старт» в карточке программы */
+"home.start.button" = "START";
+
+/* Вкладки */
+
+/* Название вкладки «Главная» */
+"tab.home" = "Startseite";
+/* Название вкладки «Карта» */
+"tab.map" = "Karte";
+/* Название вкладки «Профиль» */
+"tab.profile" = "Profil";
+
+/* Блок «До следующего уровня» */
+
+/* Название ранга в promo-блоке (мелкая бронзовая подпись) */
+"nextLevel.rank" = "HERKULES";
+/* Основная строка о количестве тренировок до следующего уровня */
+"nextLevel.title" = "Noch 3 Trainingseinheiten bis zum nächsten Level";
+/* Схема повторений под заголовком (превью) */
+"nextLevel.subtitle" = "Wiederholungen: 3 - 5 - 7 - 9 - 6";
+
+/* Статистика */
+
+/* Заголовок секции статистики между горизонтальными чертами */
+"stats.section.title" = "Statistik";
+
+/* Подпись секции «Личный рекорд» в левой карточке */
+"stats.personalRecord.eyebrow" = "Bestleistung";
+/* Название упражнения в левой карточке */
+"stats.personalRecord.exercise" = "Klimmzüge";
+/* Подпись «Лучший результат» в левой карточке */
+"stats.personalRecord.bestResult" = "Bestes Ergebnis";
+/* Подпись секции «Прогресс месяца» в правой карточке */
+"stats.monthProgress.eyebrow" = "Fortschritt im Juni";
+/* Счётчик тренировок: %1$d — выполнено, %2$d — цель */
+"stats.monthProgress.workouts" = "%1$d von %2$d Trainings";
+
+/* Превью-программы */
+
+/* Короткое название программы «Турник» для чипа */
+"preview.program.pullups.chip" = "Reck";
+/* Полное название программы «Подтягивания на турнике» для карточки */
+"preview.program.pullups.title" = "Klimmzüge am Reck";
+/* Короткое название программы «Брусья» для чипа */
+"preview.program.dips.chip" = "Barren";
+/* Полное название программы «Отжимания на брусьях» для карточки */
+"preview.program.dips.title" = "Dips am Barren";
+/* Короткое название программы «Отжимания» для чипа */
+"preview.program.pushups.chip" = "Liegestütze";
+/* Полное название программы «Отжимания от пола» для карточки */
+"preview.program.pushups.title" = "Liegestütze am Boden";
+/* Короткое название программы «Приседания» для чипа */
+"preview.program.squats.chip" = "Kniebeugen";
+/* Полное название программы «Приседания» для карточки */
+"preview.program.squats.title" = "Kniebeugen";
+/* Короткое название программы «Планка» для чипа */
+"preview.program.plank.chip" = "Plank";
+/* Полное название программы «Планка» для карточки */
+"preview.program.plank.title" = "Plank";
+/* Короткое название программы «Пресс» для чипа */
+"preview.program.abs.chip" = "Bauchmuskeln";
+/* Полное название программы «Пресс» для карточки */
+"preview.program.abs.title" = "Bauchmuskeltraining";

@@ -1,0 +1,9 @@
+strings:
+  inputs:
+    - UrbanX/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: UrbanX/Generated/Strings.swift
+      params:
+        enumName: Strings
+        publicAccess: false
