@@ -32,9 +32,13 @@ struct ProgressCardView: View {
     /// Вызывается по завершении анимации прогресса на карточке программы.
     let onAnimationPlayed: () -> Void
 
+    let onCardTapped: () -> Void
+
     // MARK: - Body
     var body: some View {
         cardContent
+            .contentShape(Rectangle())
+            .onTapGesture(perform: onCardTapped)
             .uxSurface(
                 cornerRadius: LocalConstants.cornerRadius,
                 padding: LocalConstants.cardPadding,

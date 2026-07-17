@@ -34,6 +34,13 @@ extension HomeFeature {
         action: Action
     ) -> Effect<Action> {
         switch action {
+        case .progressCardTapped:
+            state.path.append(.levelList(LevelListFeature.State()))
+            return .none
+
+        case .path:
+            return .none
+
         case .startTapped:
             print("START")
             return .none

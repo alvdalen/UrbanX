@@ -20,6 +20,12 @@ internal enum Strings {
       internal static let button = Strings.tr("Localizable", "home.start.button", fallback: "START")
     }
   }
+  internal enum LevelList {
+    internal enum Navigation {
+      /// Заголовок navigation bar на экране списка уровней
+      internal static let title = Strings.tr("Localizable", "levelList.navigation.title", fallback: "Levels")
+    }
+  }
   internal enum NextLevel {
     /// Название ранга в promo-блоке (мелкая бронзовая подпись)
     internal static let rank = Strings.tr("Localizable", "nextLevel.rank", fallback: "GERKULES")

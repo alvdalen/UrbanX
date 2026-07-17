@@ -11,11 +11,17 @@ import Foundation
 /// Состояние и логика главного экрана: программы, карусель, закрепление чипов.
 @Reducer
 struct HomeFeature {
+    @Reducer(state: .equatable, action: .equatable)
+    enum Screen {
+        case levelList(LevelListFeature)
+    }
+
     // MARK: - Body
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             reduce(into: &state, action: action)
         }
+        .forEach(\.path, action: \.path)
     }
 }
 
@@ -70,6 +76,8 @@ extension HomeFeature {
 
     @ObservableState
     struct State: Equatable {
+        var path = StackState<Screen.State>()
+
         /// Список программ на главном экране; закреплённые идут первыми.
         var programs: [Program]
 
@@ -194,7 +202,13 @@ extension HomeFeature {
 // MARK: - Action
 extension HomeFeature {
     /// События главного экрана.
+    @CasePathable
     enum Action: Equatable {
+        case path(StackActionOf<Screen>)
+
+        /// Тап по карточке прогресса программы.
+        case progressCardTapped
+
         /// Нажата кнопка «Старт» в карточке программы.
         case startTapped
 

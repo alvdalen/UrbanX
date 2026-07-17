@@ -25,10 +25,15 @@ struct HomeView: View {
 
     /// Оболочка экрана: навигация, вертикальный скролл и haptic feedback.
     private var navigationShell: some View {
-        NavigationStack {
+        NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
             content
                 .navigationTitle(Strings.Home.Navigation.title)
                 .navigationBarTitleDisplayMode(.large)
+        } destination: { store in
+            switch store.case {
+            case let .levelList(store):
+                LevelListView(store: store)
+            }
         }
         .onChange(of: store.pageChangeHapticTick) {
             HapticFeedback.playPageChange()

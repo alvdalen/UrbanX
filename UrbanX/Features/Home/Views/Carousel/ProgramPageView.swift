@@ -25,7 +25,9 @@ struct ProgramPageView: View {
     
     /// Вызывается по завершении анимации прогресса на карточке программы.
     let onProgressAnimationCompleted: () -> Void
-    
+
+    let onProgressCardTapped: () -> Void
+
     // MARK: - Body
     var body: some View {
         pageContent
@@ -113,7 +115,8 @@ struct ProgramPageView: View {
             isSelected: isSelected,
             hasAnimatedBefore: hasAnimatedBefore,
             canAnimate: canAnimate,
-            onAnimationPlayed: onProgressAnimationCompleted
+            onAnimationPlayed: onProgressAnimationCompleted,
+            onCardTapped: onProgressCardTapped
         )
     }
     

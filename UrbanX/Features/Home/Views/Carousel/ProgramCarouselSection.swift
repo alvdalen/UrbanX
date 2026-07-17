@@ -83,6 +83,9 @@ struct ProgramCarouselSection: View {
                 hasAnimatedBefore: store.animatedProgramIDs.contains(program.id),
                 onProgressAnimationCompleted: {
                     store.send(.progressAnimationCompleted(program.id))
+                },
+                onProgressCardTapped: {
+                    store.send(.progressCardTapped)
                 }
             )
             .containerRelativeFrame(.horizontal)
